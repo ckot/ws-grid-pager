@@ -116,7 +116,8 @@ wrap: %s""" % (self.num_rows, self.num_cols,
         new_ws = self.curr_ws
         if "left" == self.direction:
             if 0 == self.curr_col:
-                new_ws = (self.curr_row * self.num_cols) + self.num_cols -1
+                if self.wrap:
+                    new_ws = (self.curr_row * self.num_cols) + self.num_cols -1
             else:
                 new_ws = self.curr_ws - 1
         elif "right" == self.direction:
