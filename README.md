@@ -2,11 +2,13 @@
 A workspace pager supporting grid layout for EMWH-compliant X.org window managers
 
 Many minimalistic window managers don't natively support workspaces layed
-out as a grid.  This software treats the workspaces as if they actually
-are layed out as a grid. Currently, this implemtation requires that the
-environment variables: WORKSPACE_ROWS and WORKSPACE_COLUMNS be defined,
-although I plan to make this optional if the xprop property _NET_DESKTOP_LAYOUT
-is properly set.
+out as a grid.  This software treats the workspaces as if they actually are.
+
+Currently, this implementation requires that the environment variables:
+- WORKSPACE_ROWS
+- WORKSPACE_COLUMNS
+be defined, although I plan to make this optional if the xprop property
+`_NET_DESKTOP_LAYOUT` is properly set.
 
 Although this is designed/tested (manually) for Fluxbox, it *should* work for
 any window manager which is at least minimally EMWH compliant.  Currently, I've
@@ -49,7 +51,7 @@ The ws-grid-pager program, being generic, also requires the argument:
 A description of the cmd-line arguments will be listed if you run any of the
 programs at the cmd-line either without any arguments or with -h|--help
 
-# Suggested Usage with Fluxbox
+## Suggested Usage with Fluxbox
 
 ~/.fluxbox/keys:
 
