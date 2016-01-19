@@ -69,41 +69,41 @@ Suggested Usage with Fluxbox
 
 ``~/.fluxbox/keys:``
 
-|# change to previous/next workspace
-|#Control Mod1 Left :PrevWorkspace
-|#Control Mod1 Right :NextWorkspace
-|Control Mod1 Left        :Exec gp-switch-workspace -d left
-|Control Mod1 Right       :Exec gp-switch-workspace -d right
-|Control Mod1 Up          :Exec gp-switch-workspace -d up
-|Control Mod1 Down        :Exec gp-switch-workspace -d down
-|Shift Control Mod1 Left  :Exec gp-switch-workspace -d left   -w
-|Shift Control Mod1 Right :Exec gp-switch-workspace -d right  -w
-|Shift Control Mod1 Up    :Exec gp-switch-workspace -d up     -w
-|Shift Control Mod1 Down  :Exec gp-switch-workspace -d down   -w
+| # change to previous/next workspace
+| #Control Mod1 Left :PrevWorkspace
+| #Control Mod1 Right :NextWorkspace
+| Control Mod1 Left        :Exec gp-switch-workspace -d left
+| Control Mod1 Right       :Exec gp-switch-workspace -d right
+| Control Mod1 Up          :Exec gp-switch-workspace -d up
+| Control Mod1 Down        :Exec gp-switch-workspace -d down
+| Shift Control Mod1 Left  :Exec gp-switch-workspace -d left   -w
+| Shift Control Mod1 Right :Exec gp-switch-workspace -d right  -w
+| Shift Control Mod1 Up    :Exec gp-switch-workspace -d up     -w
+| Shift Control Mod1 Down  :Exec gp-switch-workspace -d down   -w
 |
-|# send the current window to previous/next workspace
-|#Mod4 Left  :SendToPrevWorkspace
-|#Mod4 Right :SendToNextWorkspace
-|Mod4 Left        :Exec gp-send-window -d left
-|Mod4 Right       :Exec gp-send-window -d right
-|Mod4 Up          :Exec gp-send-window -d up
-|Mod4 Down        :Exec gp-send-window -d down
-|Shift Mod4 Left  :Exec gp-send-window -d left  -w
-|Shift Mod4 Right :Exec gp-send-window -d right -w
-|Shift Mod4 Up    :Exec gp-send-window -d up    -w
-|Shift Mod4 Down  :Exec gp-send-window -d down  -w
+| # send the current window to previous/next workspace
+| #Mod4 Left  :SendToPrevWorkspace
+| #Mod4 Right :SendToNextWorkspace
+| Mod4 Left        :Exec gp-send-window -d left
+| Mod4 Right       :Exec gp-send-window -d right
+| Mod4 Up          :Exec gp-send-window -d up
+| Mod4 Down        :Exec gp-send-window -d down
+| Shift Mod4 Left  :Exec gp-send-window -d left  -w
+| Shift Mod4 Right :Exec gp-send-window -d right -w
+| Shift Mod4 Up    :Exec gp-send-window -d up    -w
+| Shift Mod4 Down  :Exec gp-send-window -d down  -w
 |
-|# send the current window and follow it to previous/next workspace
-|#Control Mod4 Left :TakeToPrevWorkspace
-|#Control Mod4 Right :TakeToNextWorkspace
-|Control Mod4 Left        :Exec gp-take-window -d left
-|Control Mod4 Right       :Exec gp-take-window -d right
-|Control Mod4 Up          :Exec gp-take-window -d up
-|Control Mod4 Down        :Exec gp-take-window -d down
-|Shift Control Mod4 Left  :Exec gp-take-window -d left  -w
-|Shift Control Mod4 Right :Exec gp-take-window -d right -w
-|Shift Control Mod4 Up    :Exec gp-take-window -d up    -w
-|Shift Control Mod4 Down  :Exec gp-take-window -d down  -w
+| # send the current window and follow it to previous/next workspace
+| #Control Mod4 Left :TakeToPrevWorkspace
+| #Control Mod4 Right :TakeToNextWorkspace
+| Control Mod4 Left        :Exec gp-take-window -d left
+| Control Mod4 Right       :Exec gp-take-window -d right
+| Control Mod4 Up          :Exec gp-take-window -d up
+| Control Mod4 Down        :Exec gp-take-window -d down
+| Shift Control Mod4 Left  :Exec gp-take-window -d left  -w
+| Shift Control Mod4 Right :Exec gp-take-window -d right -w
+| Shift Control Mod4 Up    :Exec gp-take-window -d up    -w
+| Shift Control Mod4 Down  :Exec gp-take-window -d down  -w
 
 Although you may or may not care to add the -w variants.  I'm not sure if I
 want wrapping myself, but have added support for folks who may.
