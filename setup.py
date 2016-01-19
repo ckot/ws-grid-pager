@@ -3,7 +3,7 @@ from os.path import join, dirname
 
 from setuptools import setup, find_packages
 
-README = open(join(dirname(__file__), 'README.md')).read()
+README = open(join(dirname(__file__), 'README.rst')).read()
 setup(
     name='ws-grid-pager',
     version='0.1',
@@ -39,6 +39,6 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Topic :: Desktop Environment :: Window Managers',
-        'Topic :: Desktop Environment :: Window Managers :: Fluxbox'
+        'Topic :: Desktop Environment :: Window Managers :: Fluxbox',
     ],
 )
