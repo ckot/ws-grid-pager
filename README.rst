@@ -8,10 +8,12 @@ Many minimalistic window managers don't natively support workspaces layed
 out as a grid.  This software treats the workspaces as if they actually are.
 
 Currently, this implementation requires that the environment variables:
+
 * WORKSPACE_ROWS
 * WORKSPACE_COLUMNS
+
 be defined, although I plan to make this optional if the xprop property
-`_NET_DESKTOP_LAYOUT` is properly set.
+``_NET_DESKTOP_LAYOUT`` is properly set.
 
 Although this is designed for Fluxbox, it **should** work for any window manager which is at least minimally EMWH compliant.
 
@@ -104,6 +106,6 @@ Suggested Usage with Fluxbox
 | Shift Control Mod4 Right :Exec gp-take-window -d right -w
 | Shift Control Mod4 Up    :Exec gp-take-window -d up    -w
 | Shift Control Mod4 Down  :Exec gp-take-window -d down  -w
-
+|
 Although you may or may not care to add the -w variants.  I'm not sure if I
 want wrapping myself, but have added support for folks who may.
