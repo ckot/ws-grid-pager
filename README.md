@@ -10,29 +10,35 @@ Currently, this implementation requires that the environment variables:
 be defined, although I plan to make this optional if the xprop property
 `_NET_DESKTOP_LAYOUT` is properly set.
 
-Although this is designed/tested (manually) for Fluxbox, it *should* work for
-any window manager which is at least minimally EMWH compliant.  Currently, I've
-only tested for my own layout 4x3, which is why I have this listed as 'Beta'
-software
+Although this is designed for Fluxbox, it **should** work for any window manager
+which is at least minimally EMWH compliant.
+
+Currently, I've only tested (manually) for my own 4x3 layout, on Xubuntu 14.04,
+which is why I have this software listed as 'Beta'.
 
 
-# Installation
-The only dependency is that you have `wmctrl` installed.  I *believe* that
-`xprop` will already be present on any X.org system, but if not, you'll need
+## Installation
+The only known dependencies are `wmctrl` and python's `setuptools`. I *believe*
+that `xprop` will already be present on any X.org system, but if not, you'll need
 to install that as well.
 
 `sudo pip install grid-pager`
 
 Depending on your system's configuration, you may be able to drop the `sudo` bit
 
+#### Alternative installation methods
 If you'd rather get the latest from git,
 
 `sudo pip install -e https://github.com/ckot/grid-pager.git`
 
-Alternatively, you can always download a .zip file from the github repo.
+- or -
+
+you can always download a .zip file from the github repo, and run
+`sudo python setup.py install` from the directory created once you unzip the file
 
 
-# Usage
+
+## Usage
 
 This package installs 4 command-line programs:
 - ws-grid-pager
@@ -51,7 +57,7 @@ The ws-grid-pager program, being generic, also requires the argument:
 A description of the cmd-line arguments will be listed if you run any of the
 programs at the cmd-line either without any arguments or with -h|--help
 
-## Suggested Usage with Fluxbox
+#### Suggested Usage with Fluxbox
 
 ~/.fluxbox/keys:
 
@@ -90,3 +96,6 @@ programs at the cmd-line either without any arguments or with -h|--help
     Shift Control Mod4 Right :Exec gp-take-window -d right -w
     Shift Control Mod4 Up    :Exec gp-take-window -d up    -w
     Shift Control Mod4 Down  :Exec gp-take-window -d down  -w
+
+Although you may or may not care to add the -w variants.  I'm not sure if I
+want wrapping myself, but have added support for folks who may.
