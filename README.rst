@@ -50,6 +50,7 @@ Usage
 -----
 
 This package installs 4 command-line programs:
+
 * ws-grid-pager
 * gp-switch-workspace
 * gp-send-window
