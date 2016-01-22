@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 README = open(join(dirname(__file__), 'README.rst')).read()
 setup(
     name='ws-grid-pager',
-    version='0.1',
+    version='0.2',
     packages=find_packages(),
     package_data={},
     entry_points={
