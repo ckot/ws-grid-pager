@@ -26,7 +26,7 @@ Installation
 
 The only known dependencies are ``wmctrl`` and python's ``setuptools``. I *believe* that ``xprop`` will already be present on any X.org system, but if not, you'll need to install that as well.
 
-``sudo pip install grid-pager``
+``sudo pip install ws-grid-pager``
 
 Depending on your system's configuration, you may be able to drop the ``sudo`` bit
 
@@ -35,7 +35,7 @@ Alternative installation methods
 
 If you'd rather get the latest from git,
 
-``sudo pip install -e https://github.com/ckot/grid-pager.git``
+``sudo pip install -e https://github.com/ckot/ws-grid-pager.git``
 
 \- or \-
 
