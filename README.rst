@@ -1,4 +1,3 @@
-=============
 ws-grid-pager
 =============
 
@@ -73,8 +72,8 @@ Suggested Usage with Fluxbox
 ``~/.fluxbox/keys:``
 
 | # change to previous/next workspace
-| #Control Mod1 Left :PrevWorkspace
-| #Control Mod1 Right :NextWorkspace
+| # Control Mod1 Left :PrevWorkspace
+| # Control Mod1 Right :NextWorkspace
 | Control Mod1 Left        :Exec gp-switch-workspace -d left
 | Control Mod1 Right       :Exec gp-switch-workspace -d right
 | Control Mod1 Up          :Exec gp-switch-workspace -d up
@@ -108,5 +107,6 @@ Suggested Usage with Fluxbox
 | Shift Control Mod4 Up    :Exec gp-take-window -d up    -w
 | Shift Control Mod4 Down  :Exec gp-take-window -d down  -w
 |
+
 Although you may or may not care to add the -w variants.  I'm not sure if I
 want wrapping myself, but have added support for folks who may.
